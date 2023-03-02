@@ -10,7 +10,6 @@ module Ada
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-    config.hosts << "3000-nomcatt-ada-r4zq6gve4lk.ws-us89.gitpod.io"
 
     # Configuration for the application, engines, and railties goes here.
     #
