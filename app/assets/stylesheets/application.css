@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    color: white;
+    background-color: #2e3440
+ }
+
+ .loginlink {
+    color: white
+ }
