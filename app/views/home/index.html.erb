@@ -1,5 +1,8 @@
 <div class="container-fluid text-center" >
     <h1>ADA</h1>
     <h4>Armor Disposal Assistant</h4>
-    <p>Please <a href="#" class="loginlink">login</a> to continue.
+    <p>Please login to continue.
+    <%= form_tag('/auth/bungie', method: 'post', data: {turbo: false}) do %>
+        <button type='submit'>Log in with Bungie</button>
+      <% end %>
 </div>
