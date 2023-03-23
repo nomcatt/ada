@@ -1,5 +1,7 @@
 require 'bungie_client'
 
+BungieClient::Service.services.merge YAML.load_file(File.join(Rails.root, 'config', 'new_bungie_services.yml') || {})
+
 class SessionsController < ApplicationController
     def new
       render :new
@@ -12,8 +14,8 @@ class SessionsController < ApplicationController
       client = BungieClient::Wrapper.new api_key: ENV['BUNGIE_API_KEY'], token: user_info.credentials.token
 
       puts 'start'
-      puts client.search_destiny_player :membershipType => '2', :displayName => 'RuBAN-GT'
-      # puts client.search_destiny_entities searchTerm: 'sunshot', type: 'DestinyInventoryItemDefinition', page: 0
+      # puts client.search_destiny_player :membershipType => '2', :displayName => 'RuBAN-GT'
+      puts client.search_destiny_entities searchTerm: 'sunshot', type: 'DestinyInventoryItemDefinition', page: 0
       puts 'end'
       
       #right now this will just send you back to the login page.

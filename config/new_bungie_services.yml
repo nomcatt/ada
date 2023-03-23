@@ -1,0 +1,4 @@
+search_destiny_entities:
+  :name: SearchDestinyEntities
+  :method: get
+  :endpoint: Destiny2/Armory/Search/{type}/{searchTerm}/
