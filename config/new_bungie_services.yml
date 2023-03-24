@@ -2,3 +2,8 @@ search_destiny_entities:
   :name: SearchDestinyEntities
   :method: get
   :endpoint: Destiny2/Armory/Search/{type}/{searchTerm}/
+
+snapshot_loadout:
+  :name: SnapshotLoadout
+  :method: post
+  :endpoint: Destiny2/Actions/Loadouts/SnapshotLoadout

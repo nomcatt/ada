@@ -15,7 +15,8 @@ class SessionsController < ApplicationController
 
       puts 'start'
       # puts client.search_destiny_player :membershipType => '2', :displayName => 'RuBAN-GT'
-      puts client.search_destiny_entities searchTerm: 'sunshot', type: 'DestinyInventoryItemDefinition', page: 0
+      # puts client.search_destiny_entities searchTerm: 'sunshot', type: 'DestinyInventoryItemDefinition', page: 0
+      puts client.snapshot_loadout
       puts 'end'
       
       #right now this will just send you back to the login page.
